@@ -1,26 +1,29 @@
-function sayHello (string) {
-  return 'Hello, ' + string + '!';
-};
+function sayHello(string) {
+  return `Hello, ${string}!`;
+}
 
-function uppercase (string) {
-return string.toUpperCase();
-};
+function uppercase(string) {
+  return string.toUpperCase();
+}
 
-function lowercase (string) {
-return string.toLowerCase();
-};
+function lowercase(string) {
+  return string.toLowerCase();
+}
 
-function countCharacters (string) {
-return string.length;
-};
+function countCharacters(string) {
+  // your code here
+  return string.length;
+}
 
-function firstCharacter (string) {
-return string.charAt(0);
-};
+function firstCharacter(string) {
+  
+  return string[0];
+}
 
-function firstCharacters (string, n) {
- return string.substring(0,n);
-};
+function firstCharacters(string, n) {
+  // your code here
+  return string.substring(0, n);
+}
 
 module.exports = {
   sayHello,
@@ -28,5 +31,5 @@ module.exports = {
   lowercase,
   countCharacters,
   firstCharacter,
-  firstCharacters
+  firstCharacters,
 };

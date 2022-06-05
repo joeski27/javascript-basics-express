@@ -11,3 +11,5 @@ const {
 router.get('/hello/:string', (req, res) => {
   res.status(200).json({ result: sayHello(req.params.string) });
 });
+
+module.exports = router;
